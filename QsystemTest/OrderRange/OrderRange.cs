@@ -13,11 +13,6 @@ namespace OrderRange
             var listaPares = new List<int>();
             var listaImPares = new List<int>();
 
-            //numeros = new int[] { 2, 1, 4, 5,10,100,91,13,51 };
-            //numeros = new int[] { 2, 1, 4, 5 };
-            //numeros = new int[] { 4,2,9,3,6 };
-            //numeros = new int[] { 58,60,55,48,57,73 };
-
             for (int i = 0; i < numeros.Length; i++)
             {
                 if (numeros[i]%2 == 0 )
@@ -84,13 +79,6 @@ namespace OrderRange
 
         static void Main(string[] args)
         {
-            #region QuickTest
-            //var stringResult = "";
-            //var imprimir = build(null);
-            //stringResult = string.Format("Salida: [{0}]", string.Join(", ", imprimir.Item2));
-            //stringResult = $"{stringResult} {string.Format(", [{0}]", string.Join(", ", imprimir.Item1))}";
-            //Console.WriteLine(stringResult+Environment.NewLine);
-            #endregion
             while (true)
             {
                 var stringResult = "";
@@ -107,7 +95,6 @@ namespace OrderRange
                 ArrayValidateNumbers(coleccionNumeros, validate, stringNumber, Nnumbers);
 
                 Console.WriteLine("Entrada: [{0}]", string.Join(", ", coleccionNumeros));
-                //Array.ForEach(coleccionNumeros, Console.WriteLine);
 
                 var imprimir = build(coleccionNumeros);
                 stringResult = string.Format("Salida: [{0}]", string.Join(", ", imprimir.Item2));
